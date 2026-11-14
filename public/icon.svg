@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </radialGradient>
+    <radialGradient id="mars" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="48%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </radialGradient>
+    <linearGradient id="visor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="108" fill="url(#sky)" />
+
+  <!-- Stars -->
+  <circle cx="96" cy="108" r="3" fill="#f8fafc" opacity="0.85" />
+  <circle cx="412" cy="96" r="4" fill="#fde68a" opacity="0.9" />
+  <circle cx="136" cy="404" r="3" fill="#bae6fd" opacity="0.8" />
+  <circle cx="394" cy="396" r="3.5" fill="#f8fafc" opacity="0.75" />
+  <circle cx="78" cy="248" r="2.5" fill="#e2e8f0" opacity="0.65" />
+  <circle cx="436" cy="226" r="2.5" fill="#e2e8f0" opacity="0.65" />
+
+  <!-- Orbital Ring -->
+  <ellipse
+    cx="256"
+    cy="266"
+    rx="196"
+    ry="62"
+    transform="rotate(-18 256 266)"
+    stroke="#fbbf24"
+    stroke-opacity="0.55"
+    stroke-width="8"
+  />
+
+  <!-- Mars Planet -->
+  <circle cx="256" cy="264" r="134" fill="url(#mars)" stroke="#fdba74" stroke-opacity="0.35" stroke-width="4" />
+  <circle cx="212" cy="236" r="26" fill="#9a3412" opacity="0.45" />
+  <circle cx="308" cy="298" r="34" fill="#7c2d12" opacity="0.4" />
+  <circle cx="278" cy="206" r="14" fill="#c2410c" opacity="0.5" />
+
+  <!-- Stylized Explorer Visor Crest -->
+  <rect x="200" y="218" width="112" height="84" rx="28" fill="#f8fafc" stroke="#cbd5e1" stroke-width="5" />
+  <rect x="214" y="232" width="84" height="54" rx="18" fill="url(#visor)" />
+  <path d="M226 244 L268 244" stroke="#bae6fd" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+
+  <!-- Glowing Energy Crystal Accent -->
+  <polygon points="392,130 412,162 392,194 372,162" fill="#22d3ee" stroke="#ecfeff" stroke-width="3" />
+</svg>

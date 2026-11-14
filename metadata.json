@@ -1,0 +1,6 @@
+{
+  "name": "Mars Survival: Last Explorer",
+  "description": "An educational 3D space adventure featuring customizable astronauts, rovers, expanded space station, checkpoints, 4 game modes, and Mars science quiz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

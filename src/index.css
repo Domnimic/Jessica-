@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    background-color: #070a12;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-game {
+  font-family: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars where needed */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(30, 20, 20, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(220, 80, 40, 0.5);
+  border-radius: 9999px;
+}
+
+@keyframes roverDamagePulse {
+  0%, 100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.78;
+  }
+}
+
+.animate-rover-damage-pulse {
+  animation: roverDamagePulse 1.05s ease-in-out infinite;
+  will-change: opacity;
+}
+
+@keyframes rotateDevicePrompt {
+  0%, 20% {
+    transform: rotate(0deg);
+  }
+  55%, 80% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-rotate-device {
+  animation: rotateDevicePrompt 2.8s ease-in-out infinite;
+  will-change: transform;
+}
